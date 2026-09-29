@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "total_resources": 54,
+    "total_managed": 40,
+    "total_unmanaged": 14,
+    "total_missing": 0,
+    "total_differences": 0
+  },
+  "managed": [
+    { "type": "aws_instance", "id": "i-0a1b2c3d4e5f60001" },
+    { "type": "aws_s3_bucket", "id": "my-production-assets" }
+  ],
+  "unmanaged": [
+    {
+      "type": "aws_nat_gateway",
+      "id": "nat-0a1b2c3d4e5f60001",
+      "source": "aws",
+      "attrs": { "state": "available", "vpc_id": "vpc-01234567" }
+    },
+    {
+      "type": "aws_nat_gateway",
+      "id": "nat-0a1b2c3d4e5f60002",
+      "source": "aws",
+      "attrs": { "state": "available", "vpc_id": "vpc-01234567" }
+    },
+    {
+      "type": "aws_ebs_volume",
+      "id": "vol-0a1b2c3d4e5f00001",
+      "source": "aws",
+      "attrs": { "size": 200, "volume_type": "gp3", "state": "available" }
+    },
+    {
+      "type": "aws_ebs_volume",
+      "id": "vol-0a1b2c3d4e5f00002",
+      "source": "aws",
+      "attrs": { "size": 500, "volume_type": "io2", "state": "available" }
+    },
+    {
+      "type": "aws_eip",
+      "id": "eipalloc-0a1b2c3d4e5f00001",
+      "source": "aws",
+      "attrs": { "public_ip": "54.214.12.34", "association_id": "" }
+    },
+    {
+      "type": "aws_eip",
+      "id": "eipalloc-0a1b2c3d4e5f00002",
+      "source": "aws",
+      "attrs": { "public_ip": "54.214.12.35", "association_id": "" }
+    },
+    {
+      "type": "aws_lb",
+      "id": "arn:aws:elasticloadbalancing:eu-central-1:123456789012:loadbalancer/app/zombie-alb/50dc6c495c0c9188",
+      "source": "aws",
+      "attrs": { "type": "application", "state": "active" }
+    },
+    {
+      "type": "aws_security_group_rule",
+      "id": "sgr-0123456789abcdef0",
+      "source": "aws",
+      "attrs": { "type": "ingress", "from_port": 22, "to_port": 22, "cidr_blocks": ["0.0.0.0/0"] }
+    },
+    {
+      "type": "aws_s3_bucket",
+      "id": "confidential-data-test-bucket-leak",
+      "source": "aws",
+      "attrs": { "acl": "public-read" }
+    }
+  ]
+}
