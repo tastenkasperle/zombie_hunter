@@ -1,0 +1,5 @@
+bin/driftctl.exe
+tests/
+.github/
+.gitignore
+*.log

@@ -1,23 +1,41 @@
 {
   "name": "zombie-hunter",
   "version": "1.0.0",
-  "description": "FinOps Cloud Governance & Unmanaged Resource Hunter",
+  "description": "FinOps-powered Cloud Governance & Shadow-IT Detection engine for Terraform and OpenTofu",
   "main": "src/index.mjs",
+  "bin": {
+    "zombie-hunter": "src/cli/index.mjs",
+    "zombie-hunter-mcp": "src/mcp/server.mjs"
+  },
   "type": "module",
   "scripts": {
     "test": "node tests/run_all.mjs",
     "scan": "node src/cli/index.mjs scan",
-    "audit": "node src/cli/index.mjs audit"
+    "audit": "node src/cli/index.mjs audit",
+    "mcp": "node src/mcp/server.mjs"
   },
   "keywords": [
+    "mcp",
+    "model-context-protocol",
     "finops",
     "cloud-drift",
+    "shadow-it",
     "terraform",
     "opentofu",
     "aws",
     "driftctl",
-    "mcp"
+    "ai-agents",
+    "devops",
+    "security"
   ],
   "author": "Diamantenschmiede",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tastenkasperle/zombie_hunter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tastenkasperle/zombie_hunter/issues"
+  },
+  "homepage": "https://github.com/tastenkasperle/zombie_hunter#readme"
 }

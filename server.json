@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "zombie-hunter",
+  "version": "1.0.0",
+  "description": "FinOps-powered Cloud Governance & Shadow-IT Detection engine for Terraform and OpenTofu",
+  "author": {
+    "name": "Diamantenschmiede",
+    "url": "https://github.com/tastenkasperle"
+  },
+  "homepage": "https://github.com/tastenkasperle/zombie_hunter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tastenkasperle/zombie_hunter.git"
+  },
+  "capabilities": {
+    "tools": true
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "node",
+    "args": [
+      "src/mcp/server.mjs"
+    ]
+  }
+}
