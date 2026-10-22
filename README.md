@@ -1,6 +1,7 @@
 # 🧟‍♂️ ZombieHunter (DriftSentinel Engine)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Glama Score](https://glama.ai/mcp/servers/tastenkasperle/zombie_hunter/badges/score.svg)](https://glama.ai/mcp/servers/tastenkasperle/zombie_hunter)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
 [![Test Suite](https://img.shields.io/badge/Tests-7%2F7%20Passed-brightgreen.svg)](tests/)
 [![Security Guard](https://img.shields.io/badge/Security-Raptor_Guard_Hardened-orange.svg)](src/core/guard.mjs)
